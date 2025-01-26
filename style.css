@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-preta: #0F172A;
+    --fonte-principal: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cabecalho {
+    height: 96px;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho__container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5rem;
+    align-self: center;
+}
+
+.menu-esquerdo {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    height: 48px;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 3rem;
+}
+
+.cabecalho__menu a {
+    font-family: var(--fonte-principal);
+    color: var(--cor-preta);
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.menu-direito {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.botao-login {
+    width: 63px;
+    height: 48px;
+    padding: 0.75rem 0.5rem;
+    font-family: var(--fonte-principal);
+    color: var(--cor-preta);
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.botao-registro {
+    width: 153px;
+    height: 48px;
+    padding: 0.75rem 0.5rem;
+    font-family: var(--fonte-principal);
+    color: var(--cor-preta);
+    font-weight: 500;
+    border: solid 2px var(--cor-preta);
+    border-radius: 8px;    
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+
+}
+
+.hero__container {
+    display: flex;
+    margin: 5rem 5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex: 1;
+}
+
+.hero__textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 575px;
+    max-height: 524px;
+    gap: 2rem;
+}
+
+.hero__titulo {
+    font-family: var(--fonte-principal);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    color: var(--cor-preta);
+}
+
+.hero__titulo span {
+    position: relative;
+   
+}
+
+.hero__titulo span::after {
+    content: "";
+    position: absolute;
+    left: 2%; /* Ajuste fino da distância */
+    width: 100%; /* Ocupa toda largura da palavra */
+    height: 165%;
+    background-image: url(./assets/img/enfeite-titulo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+}
+
+.hero__subtitulo {
+    font-family: var(--fonte-principal);
+    font-size: clamp(1rem, 1.67vw, 1.5rem);
+    font-weight: 400;
+    color: var(--cor-preta);
+}
+
+.hero__botoes {
+    display: flex;
+    gap: clamp(1rem, 2vw, 2rem);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.botao__hero-1 {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    padding: clamp(1rem, 1.5vw, 1.25rem) clamp(2rem, 2.5vw, 3rem);
+    font-family: var(--fonte-principal);
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: clamp(1rem, 1.67vw, 1.5rem);
+    border-radius: 8px;
+    background-color: #EA580C;
+    cursor: pointer;
+}
+
+.botao__hero-2 {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.4rem, 0.6vw, 0.6rem);
+    background-color: transparent;
+    border: none;
+    color: #2563EB;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: clamp(1rem, 1.67vw, 1.25rem);
+}
+
+.hero__imagem__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__imagem {
+    height: auto;
+    width: clamp(450px, 100%, 624px);
+}
+
+.hero__empresas {
+    margin-top: 5rem;
+    display: flex;
+    gap: clamp(1rem, 2vw, 3rem);
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.empresas__paragrafo {
+    max-width: 135px;
+    max-height: 44px;
+    width: 100%;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    color: #475569;
+    line-height: 22.4px;
+}
+
+.empresas__logos {
+    display: flex;
+    gap: clamp(1.5rem, 3.33vw, 3rem);
+}
+
+.logo__empresa {
+    width: auto;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .hero__container {
+        gap: 0;
+        justify-content: center;
+    }
+
+    .hero__textos {
+        width: 80%;
+    }
+
+    .hero__empresas {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .empresas__paragrafo {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .empresas__logos {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    .cabecalho {
+        height: 67px;
+    }
+
+    .cabecalho__menu { 
+        display: none;
+    }
+
+    .cabecalho__container {
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+    }
+
+    .cabecalho__logo {
+        align-items: center;
+    }
+
+    .menu-direito {
+        display: none;
+    }
+
+    .hero__imagem {
+        width: clamp(350px, 100%, 500px);
+    }
+
+    .hero-section {
+        justify-content: center;
+        margin: 0 auto;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero__container {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+        gap: 3rem;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .hero__textos {  
+        min-width: 100%;
+        width: 100%;   
+    }
+
+    .hero__titulo {
+        width: 80%;
+    }
+
+
+
+    .tools__container{
+        padding: 1rem;
+    }
+
+
+    .
+}
