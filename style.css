@@ -267,11 +267,14 @@ main {
 }
 
 .tools__textos {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: clamp(0.9rem, 1.2vw, 1.2rem);
+  
 }
 
 .tools__titulo {
@@ -279,8 +282,9 @@ main {
     font-size: clamp(1.5rem, 3.889vw, 3.5rem);
     font-weight: 800;
     color: var(--cor-preta);
-    position: relative;
+   position: relative;
     z-index: 1;
+    
 }
 
 .tools__titulo span {
@@ -298,43 +302,27 @@ main {
     background-position: center;
     background-size: contain;
     z-index: -1;
+   
 }
 
-.tools-subtitulo {
+.tools__subtitulo {
     font-family: var(--fonte-principal);
-    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    font-size: clamp(0.8rem, 1.25vw, 1.1rem);
     font-weight: 400;
-    color: var(--cor-preta);
+    color: var(--cor-preta);  
+   line-height: 180%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .tools__imagem {
-    margin-top: 3.5rem;
+    
     margin-bottom: 2.2rem;
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 0 10.625rem;
+    
     position: relative;
-    display: none;
+    
 }
 
 .tools__imagem__desktop {
@@ -343,7 +331,7 @@ main {
     width: 100%;
     height: auto;
     z-index: 2;
-    display: none;
+   
 }
 
 .tools__imagem__bg1 {
@@ -398,10 +386,15 @@ main {
 .tools__apps {
     display: flex;
     align-items: center;
-    overflow-x: auto;
     gap: clamp(1rem, 0.2vw, 5rem);
     padding: 1rem;
-    display: none;
+    flex-wrap: wrap;
+    
+}
+
+.app__logo{
+    width: 100%;
+    max-width: 64px;
 }
 
 .tools__apps::after {
@@ -417,6 +410,18 @@ main {
     z-index: -1;
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1200px) {
     .hero__container {
@@ -444,6 +449,8 @@ main {
 }
 
 @media screen and (max-width: 885px) {
+
+     
     .cabecalho {
         height: 67px;
     }
@@ -500,11 +507,55 @@ main {
     }
 
 
+    .tools-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #F1F5F9;
+        
 
-    .tools__container{
-        padding: 1rem;
     }
 
+    .tools__container{
+        align-self: center;
+        width: 100%;
+        padding: 1rem;
 
-    .
+    }
+
+    .tools__textos{
+        width: 100%;
+        text-align: left;
+     
+       
+    }
+
+    .tools__titulo{
+        font-size: 1.5rem;
+        text-align: left;
+        width: 100%;
+        
+       
+    }
+
+    .tools__subtitulo{
+        font-size: 1rem;
+        text-align: left;
+        width: 100%;
+
+    }
+
+    .tools__apps{
+   
+        min-width: 300px;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+     }
+    .app__logo{
+      
+        max-width: 34px;
+    }
+
+    
 }
