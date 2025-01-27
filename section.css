@@ -47,17 +47,39 @@
 
 .container__cards-videos {
     flex: 1;
-    max-width: 654px;
-    max-height: 546px;
+    max-width: 639px;
+    max-height: 594px;
     display: flex;
     flex-direction: column;
     background-color: white;
-    justify-content: flex-end;
+    min-height: 595px;
+    align-items: flex-start; 
+}
+
+.video {
+   flex: 1;
+    z-index: 1;
+   align-self: flex-end;
+  transform: translateY(20px);
+    max-width: 600px;
+    max-height: 350px;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: block;
+    box-sizing: content-box;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .cards-videos {
     display: flex;
-    justify-content: space-between;
+    align-items: left;
+    justify-content: left;
+    margin-top: auto;
+    z-index: 100;
+    gap: 16px;
 }
 
 .card-video {
@@ -102,8 +124,7 @@
     color: #2563EB;
     font-size: clamp(0.7rem, 0.8vw, 14px);
     font-weight: 700;
-    padding: clamp(0.3rem,  0.556vw, 8px) clamp(1.5rem, 2.917vw, 2rem);
+    padding: clamp(0.3rem, 0.556vw, 8px) clamp(1.5rem, 2.917vw, 2rem);
     text-align: center;
     cursor: pointer;
-
 }
