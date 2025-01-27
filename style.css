@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import  'section.css';
 :root {
     --cor-preta: #0F172A;
     --fonte-principal: 'Roboto', sans-serif;
@@ -274,6 +274,7 @@ main {
     justify-content: center;
     text-align: center;
     gap: clamp(0.9rem, 1.2vw, 1.2rem);
+    display: block;
   
 }
 
@@ -311,6 +312,7 @@ main {
     font-weight: 400;
     color: var(--cor-preta);  
    line-height: 180%;
+ 
 }
 
 
@@ -525,7 +527,12 @@ main {
 
     .tools__textos{
         width: 100%;
-        text-align: left;
+        text-align: left; 
+    }
+
+    .tools__textos br{
+      display: none;
+  
      
        
     }
