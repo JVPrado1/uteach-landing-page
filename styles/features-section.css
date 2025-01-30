@@ -93,6 +93,7 @@
   max-height: 391px;
   aspect-ratio: 16/9;
   border: none;
+  min-height: 250px;
 
   align-self: flex-end;
   padding: 6px;
