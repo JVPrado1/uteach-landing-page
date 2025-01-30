@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(./tools-section.css);
+@import url(./features-section.css);
 :root {
   --color-primary: #000;
   --color-secondary: #fff;
@@ -73,7 +74,6 @@ body {
 }
 
 .hero-section {
-  background-color: red;
   display: flex;
 }
 
@@ -194,9 +194,11 @@ body {
 }
 
 .hero-image {
+  flex: 1;
+  display: flex;
+  max-height: clamp(300px, 50vw, 600px);
   height: 100%;
   width: 100%;
-  object-fit: contain;
 }
 
 @media screen and (max-width: 950px) {

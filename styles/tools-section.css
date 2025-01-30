@@ -3,6 +3,7 @@
 .tools-section {
   flex: 1;
   background-color: #f1f5f9;
+  z-index: 2;
 }
 
 .tools-container {
@@ -10,7 +11,6 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
   flex: 1;
   padding: 80px;
   align-items: center;
@@ -23,11 +23,11 @@
   z-index: 2;
 }
 
-.teste {
+.tools__sublinhado {
   position: relative;
 }
 
-.teste::after {
+.tools__sublinhado::after {
   content: "";
   background-image: url("../assets/sublinhado-texto.png");
   background-position: center;
@@ -55,8 +55,9 @@
 
 .tools-imagem {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
+  max-width: 1000px;
 }
 
 .linhas-container {
@@ -100,6 +101,10 @@
   }
 
   .tools-container p br {
+    display: none;
+  }
+
+  .tools__apps-container {
     display: none;
   }
 }
