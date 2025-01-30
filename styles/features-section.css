@@ -91,6 +91,9 @@
   width: 100%;
   max-width: 600px;
   max-height: 391px;
+  aspect-ratio: 16/9;
+  border: none;
+
   align-self: flex-end;
   padding: 6px;
   padding-top: 37px;
