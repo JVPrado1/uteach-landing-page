@@ -157,15 +157,6 @@
     display: none;
   }
 
-  .enfeite4 {
-    bottom: 40px;
-  }
-  .enfeite5 {
-    max-height: 300px;
-    left: -50px;
-    bottom: 50px;
-  }
-
   .enfeite1 {
     right: -40px;
   }
@@ -176,5 +167,14 @@
 
   .enfeite3 {
     right: -50px;
+  }
+
+  .enfeite4 {
+    bottom: 40px;
+  }
+  .enfeite5 {
+    max-height: 300px;
+    left: -50px;
+    bottom: 50px;
   }
 }

@@ -1,0 +1,122 @@
+.students-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.students-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 1440px;
+  gap: 44px;
+  flex-wrap: wrap-reverse;
+  padding: 80px;
+}
+
+.students__esquerdo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 636px;
+  max-height: 651px;
+  min-width: 400px;
+}
+
+.students__imagem {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.students__direito {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 600px;
+  height: 100%;
+  gap: 32px;
+  min-width: 400px;
+}
+
+.students__direito h2 {
+  font-size: clamp(24px, 5vw, 56px);
+  font-weight: 800;
+  line-height: 110%;
+  color: #0f172a;
+  font-family: var(--fonte-primaria);
+}
+
+.enfeite__aviao {
+  position: relative;
+}
+
+.enfeite__aviao::after {
+  content: "";
+  background-image: url("../assets/plane-departure.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -36%;
+  top: -70%;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.students__direito p {
+  font-size: clamp(16px, 5vw, 20px);
+  font-weight: 400;
+  line-height: 180%;
+  color: #0f172a;
+  font-family: var(--fonte-primaria);
+}
+
+.students__botao {
+  display: flex;
+  gap: 16px;
+}
+
+.students__botao p {
+  color: #2563eb;
+  font-size: clamp(16px, 5vw, 20px);
+  font-weight: 400;
+  line-height: 180%;
+}
+
+@media screen and (max-width: 950px) {
+  .students-container {
+    padding: 1rem;
+    margin-top: 35px;
+    gap: 32px;
+  }
+
+  .students__direito,
+  .students__esquerdo {
+    min-width: 100%;
+  }
+
+  .students__imagem {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 361px;
+    max-height: 309px;
+  }
+
+  .students__direito p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .students__direito h2 {
+    font-size: 24px;
+  }
+}
