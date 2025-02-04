@@ -3,6 +3,7 @@
 @import url(./features-section.css);
 @import url(./students-section.css);
 @import url(./metricas-section.css);
+@import url(./cta-section.css);
 
 :root {
   --color-primary: #000;
