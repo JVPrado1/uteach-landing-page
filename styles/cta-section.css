@@ -89,6 +89,10 @@
     max-width: clamp(361px, 50vw, 360px);
   }
 
+  .cta__imagem1 {
+    margin-top: 30px;
+  }
+
   .cta-section {
     min-height: 700px;
   }
