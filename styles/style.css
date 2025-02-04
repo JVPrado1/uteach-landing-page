@@ -4,6 +4,7 @@
 @import url(./students-section.css);
 @import url(./metricas-section.css);
 @import url(./cta-section.css);
+@import url(./footer.css);
 
 :root {
   --color-primary: #000;
