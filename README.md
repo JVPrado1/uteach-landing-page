@@ -1,6 +1,6 @@
 # Uteach - Plataforma de Ensino Online
 
-Uteach é uma landing page responsiva para uma plataforma de ensino online, desenvolvida com HTML e CSS puro. O projeto apresenta um design moderno e interativo, focado em proporcionar uma experiência de usuário fluida tanto em desktop quanto em dispositivos móveis.
+Uteach é uma landing page responsiva de uma plataforma de ensino online, desenvolvida com HTML e CSS puro. O projeto apresenta um design moderno e interativo, focado em proporcionar uma experiência de usuário fluida tanto em desktop quanto em dispositivos móveis.
 
 ## 🛠 Tecnologias Utilizadas
 - HTML5
